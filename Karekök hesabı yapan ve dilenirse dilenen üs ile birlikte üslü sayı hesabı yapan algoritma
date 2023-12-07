@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double us, square;
+    int oneTwo;
+    
+    printf("Karekökünün alınmasını istediğiniz bir sayı giriniz: ");
+    scanf("%lf",&square);
+    
+    printf("Aynı sayının gireceğiniz bir üs değeriyle de hesaplanmasını ister misiniz?\nevet[1]  hayır[2] ");
+    scanf("%d", &oneTwo);
+    
+    switch(oneTwo)
+    {
+        case 1:     
+            printf("Bir üs değeri giriniz: ");
+            scanf("%lf", &us);
+            printf("Üslü sayı: %.2lf ^ %.2lf = %.3lf\n", square, us, pow(square, us));
+        
+        case 2:
+        if(square<0){
+            while(square<0){
+            printf("Negatif sayıların karekökü hesaplanamaz, lütfen negatif olmayan bir sayı giriniz: ");
+            scanf("%lf",&square);
+            }
+            printf("Girdiğiniz sayının karekökü: %.3lf", sqrt(square));
+        }
+        else
+            printf("Girdiğiniz sayının karekökü: %.3lf", sqrt(square));
+    
+    }
+
+    return 0;
+}
