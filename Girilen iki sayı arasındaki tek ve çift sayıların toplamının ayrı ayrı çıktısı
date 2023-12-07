@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int sayi1, sayi2, tekToplam = 0, ciftToplam = 0; 
+    printf("İki adet tam sayı giriniz: ");
+    scanf("%d%d",&sayi1, &sayi2);
+    for(int sayi = sayi1; sayi1<=sayi2; sayi++)
+    if(sayi%2==0){
+        ciftToplam = ciftToplam + sayi;
+    }
+    else
+    {
+        tekToplam = tekToplam + sayi;
+    }
+    printf("%d\n%d",tekToplam,ciftToplam);
+    return 0;
+}
+
