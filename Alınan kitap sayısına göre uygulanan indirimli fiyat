@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int bookCount;
+    printf("Aldığınız kitap sayısını giriniz: ");
+    scanf("%d", &bookCount);
+    
+    if (bookCount >= 50)
+    {
+        printf("Kitap fiyatı: %d", bookCount * 65 / 100);
+    }
+    else 
+    {
+        printf("Kitap fiyatı: %d", bookCount * 90 / 100);
+    }
+    
+    return 0;
+}
+
