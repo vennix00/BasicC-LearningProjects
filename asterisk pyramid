@@ -1,0 +1,28 @@
+//This C program generates a pyramid pattern based on user input, where each row displays consecutive odd numbers of asterisk's up to the specified limit.
+#include <stdio.h>
+
+int main()
+{
+    int levelsOfPyramid;
+        
+    printf("How many levels of a pyramid would you like to create?: ");
+    scanf("%d", &levelsOfPyramid);
+    
+    for(int index1 = 1; index1 <= levelsOfPyramid; index1++)
+    {
+        for(int space = 1; space <= levelsOfPyramid - index1; space++)
+        {
+            printf(" ");
+        }
+        
+        for(int index2 = 1; index2 <= (index1 * 2) - 1; index2++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
