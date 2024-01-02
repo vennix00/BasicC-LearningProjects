@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int lastNumberOfPyramid;
+    printf("Up to which number would you like to continue the pyramid formation in the pattern of\n1\n12\n123\n...?: ");
+    scanf("%d", &lastNumberOfPyramid);
+    
+    
+    for(int index1 = 1; index1 <= lastNumberOfPyramid; index1++)
+    {
+        for(int index2 = 1; index2 <= index1; index2++)
+        {
+            printf("%d", index2);
+        }
+        printf("\n");
+    }
+    return 0;
+}
