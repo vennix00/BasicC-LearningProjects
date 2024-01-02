@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int total = 0, LastNumberOfTotal;
+    
+    printf("Up to which number starting from 1 would you like to calculate the sum of consecutive numbers?: ");
+    scanf("%d", &LastNumberOfTotal);
+    
+    for(int index1 = 1; index1<=LastNumberOfTotal; index1++)
+    {
+        total += index1;
+    }
+    printf("\n%d is the sum of consecutive numbers.", total);
+
+    return 0;
+}
